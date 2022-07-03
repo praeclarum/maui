@@ -39,7 +39,16 @@ namespace Microsoft.Maui.DeviceTests
 
 			await AssertionExtensions.Wait(() =>
 			{
+#if !IOS
+				// When running on CI this seems to give the android GC the
+				// kick it needs to actually collect the handlers.
+				// It seems the Android GC runs conservatively, if it doesn't need 
+				// to collect anything because there's no pressure to then it just doesn't
+				//
+				// WinUI same story it seems.
 				var allocateme = new byte[1024 * 1024];
+#endif
+
 				GC.Collect();
 				GC.WaitForPendingFinalizers();
 				GC.Collect();
