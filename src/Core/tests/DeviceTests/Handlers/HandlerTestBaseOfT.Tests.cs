@@ -39,6 +39,7 @@ namespace Microsoft.Maui.DeviceTests
 
 			await AssertionExtensions.Wait(() =>
 			{
+				var allocateme = new byte[1024 * 1024];
 				GC.Collect();
 				GC.WaitForPendingFinalizers();
 				GC.Collect();
