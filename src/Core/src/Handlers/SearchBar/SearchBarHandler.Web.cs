@@ -6,7 +6,7 @@ namespace Microsoft.Maui.Handlers
 	{
 		protected override Ooui.Element CreatePlatformView() => throw new NotImplementedException();
 
-		public object? QueryEditor => throw new NotImplementedException();
+		public Ooui.Element? QueryEditor => null;
 
 		public static void MapBackground(ISearchBarHandler handler, ISearchBar searchBar) { }
 		public static void MapIsEnabled(ISearchBarHandler handler, ISearchBar searchBar) { }

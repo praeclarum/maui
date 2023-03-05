@@ -29,7 +29,7 @@
     <Compile Remove="**\Android\**\*.cs" />
     <None Include="**\Android\**\*.cs" Exclude="$(DefaultItemExcludes);$(DefaultExcludesInProjectFolder)" />
   </ItemGroup>
-  <ItemGroup Condition="'$(_MauiNoTargetPlatform)' != 'True'">
+  <ItemGroup Condition="'$(_MauiNoTargetPlatform)' != 'True' OR '$(_MauiTargetPlatformIsWeb)' == 'True' ">
     <Compile Remove="**\*.Standard.cs" />
     <None Include="**\*.Standard.cs" Exclude="$(DefaultItemExcludes);$(DefaultExcludesInProjectFolder)" />
     <Compile Remove="**\Standard\**\*.cs" />
@@ -89,7 +89,7 @@
   <PropertyGroup Condition=" '$(_MauiTargetPlatformIsAndroid)' == 'True' ">
     <DefineConstants>$(DefineConstants);MONOANDROID</DefineConstants>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(_MauiNoTargetPlatform)' != 'True'">
+  <PropertyGroup Condition="'$(_MauiNoTargetPlatform)' != 'True' AND '$(_MauiTargetPlatformIsWeb)' != 'True' ">
     <DefineConstants>$(DefineConstants);PLATFORM</DefineConstants>
   </PropertyGroup>
   <ItemGroup Condition=" '$(_MauiTargetPlatformIsAndroid)' == 'True' ">

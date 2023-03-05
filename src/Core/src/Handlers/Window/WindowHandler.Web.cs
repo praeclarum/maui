@@ -2,9 +2,9 @@ using System;
 
 namespace Microsoft.Maui.Handlers
 {
-	public partial class WindowHandler : ElementHandler<IWindow, object>
+	public partial class WindowHandler : ElementHandler<IWindow, Ooui.Element>
 	{
-		protected override object CreatePlatformElement() => throw new NotImplementedException();
+		protected override Ooui.Element CreatePlatformElement() => throw new NotImplementedException();
 
 		public static void MapTitle(IWindowHandler handler, IWindow window) { }
 
