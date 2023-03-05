@@ -3,6 +3,8 @@
 using PlatformView = UIKit.UISwitch;
 #elif MONOANDROID
 using PlatformView = AndroidX.AppCompat.Widget.SwitchCompat;
+#elif WEB
+using PlatformView = Ooui.Element;
 #elif WINDOWS
 using PlatformView = Microsoft.UI.Xaml.Controls.ToggleSwitch;
 #elif TIZEN

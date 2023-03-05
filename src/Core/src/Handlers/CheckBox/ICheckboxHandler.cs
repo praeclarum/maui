@@ -3,6 +3,8 @@
 using PlatformView = Microsoft.Maui.Platform.MauiCheckBox;
 #elif __ANDROID__
 using PlatformView = AndroidX.AppCompat.Widget.AppCompatCheckBox;
+#elif WEB
+using PlatformView = Ooui.Element;
 #elif WINDOWS
 using PlatformView = Microsoft.UI.Xaml.Controls.CheckBox;
 #elif TIZEN

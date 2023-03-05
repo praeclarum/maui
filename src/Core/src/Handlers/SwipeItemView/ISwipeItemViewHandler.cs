@@ -2,6 +2,8 @@
 using PlatformView = Microsoft.Maui.Platform.ContentView;
 #elif MONOANDROID
 using PlatformView = Microsoft.Maui.Platform.ContentViewGroup;
+#elif WEB
+using PlatformView = Ooui.Element;
 #elif WINDOWS
 using PlatformView = Microsoft.UI.Xaml.FrameworkElement;
 #elif TIZEN

@@ -2,6 +2,8 @@
 using PlatformView = UIKit.UINavigationBar;
 #elif MONOANDROID
 using PlatformView = Google.Android.Material.AppBar.MaterialToolbar;
+#elif WEB
+using PlatformView = Ooui.Element;
 #elif WINDOWS
 using PlatformView = Microsoft.Maui.Platform.MauiToolbar;
 #elif TIZEN

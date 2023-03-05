@@ -2,6 +2,8 @@
 using PlatformView = UIKit.UIWindow;
 #elif MONOANDROID
 using PlatformView = Android.App.Activity;
+#elif WEB
+using PlatformView = Ooui.Element;
 #elif WINDOWS
 using PlatformView = Microsoft.UI.Xaml.Window;
 #elif TIZEN

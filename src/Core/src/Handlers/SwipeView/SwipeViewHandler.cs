@@ -2,6 +2,8 @@
 using PlatformView = Microsoft.Maui.Platform.MauiSwipeView;
 #elif ANDROID
 using PlatformView = Microsoft.Maui.Platform.MauiSwipeView;
+#elif WEB
+using PlatformView = Ooui.Element;
 #elif WINDOWS
 using PlatformView = Microsoft.UI.Xaml.Controls.SwipeControl;
 #elif TIZEN

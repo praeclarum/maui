@@ -6,6 +6,8 @@ using Microsoft.Extensions.Logging;
 using PlatformView = UIKit.IUIApplicationDelegate;
 #elif MONOANDROID
 using PlatformView = Android.App.Application;
+#elif WEB
+using PlatformView = Ooui.Element;
 #elif WINDOWS
 using PlatformView = Microsoft.UI.Xaml.Application;
 #elif TIZEN

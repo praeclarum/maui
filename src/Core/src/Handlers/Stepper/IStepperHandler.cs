@@ -2,6 +2,8 @@
 using PlatformView = UIKit.UIStepper;
 #elif MONOANDROID
 using PlatformView = Microsoft.Maui.Platform.MauiStepper;
+#elif WEB
+using PlatformView = Ooui.Element;
 #elif WINDOWS
 using PlatformView = Microsoft.Maui.Platform.MauiStepper;
 #elif TIZEN

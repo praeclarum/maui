@@ -5,6 +5,8 @@ using QueryEditor = UIKit.UITextField;
 #elif MONOANDROID
 using PlatformView = AndroidX.AppCompat.Widget.SearchView;
 using QueryEditor = Android.Widget.EditText;
+#elif WEB
+using PlatformView = Ooui.Element;
 #elif WINDOWS
 using PlatformView = Microsoft.UI.Xaml.Controls.AutoSuggestBox;
 using QueryEditor = Microsoft.UI.Xaml.Controls.AutoSuggestBox;

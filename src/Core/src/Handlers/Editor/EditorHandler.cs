@@ -3,6 +3,8 @@
 using PlatformView = Microsoft.Maui.Platform.MauiTextView;
 #elif MONOANDROID
 using PlatformView = AndroidX.AppCompat.Widget.AppCompatEditText;
+#elif WEB
+using PlatformView = Ooui.Element;
 #elif WINDOWS
 using PlatformView = Microsoft.UI.Xaml.Controls.TextBox;
 #elif TIZEN

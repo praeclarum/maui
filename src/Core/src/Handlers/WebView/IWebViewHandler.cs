@@ -2,6 +2,8 @@
 using PlatformView = WebKit.WKWebView;
 #elif MONOANDROID
 using PlatformView = Android.Webkit.WebView;
+#elif WEB
+using PlatformView = Ooui.Element;
 #elif WINDOWS
 using PlatformView = Microsoft.UI.Xaml.Controls.WebView2;
 #elif TIZEN

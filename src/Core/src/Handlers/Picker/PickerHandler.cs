@@ -2,6 +2,8 @@
 using PlatformView = Microsoft.Maui.Platform.MauiPicker;
 #elif MONOANDROID
 using PlatformView = Microsoft.Maui.Platform.MauiPicker;
+#elif WEB
+using PlatformView = Ooui.Element;
 #elif WINDOWS
 using PlatformView = Microsoft.UI.Xaml.Controls.ComboBox;
 #elif TIZEN

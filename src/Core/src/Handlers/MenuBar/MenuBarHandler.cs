@@ -5,6 +5,8 @@ using System.Text;
 using PlatformView = UIKit.IUIMenuBuilder;
 #elif MONOANDROID
 using PlatformView = Android.Views.View;
+#elif WEB
+using PlatformView = Ooui.Element;
 #elif WINDOWS
 using PlatformView = Microsoft.UI.Xaml.Controls.MenuBar;
 #elif TIZEN

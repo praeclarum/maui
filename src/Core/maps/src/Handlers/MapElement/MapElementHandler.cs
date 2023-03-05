@@ -2,6 +2,8 @@
 using PlatformView = MapKit.MKOverlayRenderer;
 #elif MONOANDROID
 using PlatformView = Java.Lang.Object;
+#elif WEB
+using PlatformView = Ooui.Element;
 #elif WINDOWS
 using PlatformView = System.Object;
 #elif TIZEN

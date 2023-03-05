@@ -4,6 +4,8 @@ using System.Threading;
 using PlatformView = UIKit.UIImageView;
 #elif MONOANDROID
 using PlatformView = Android.Widget.ImageView;
+#elif WEB
+using PlatformView = Ooui.Element;
 #elif WINDOWS
 using PlatformView = Microsoft.UI.Xaml.Controls.Image;
 #elif TIZEN

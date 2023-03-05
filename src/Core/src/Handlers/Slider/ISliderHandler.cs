@@ -2,6 +2,8 @@
 using PlatformView = UIKit.UISlider;
 #elif MONOANDROID
 using PlatformView = Android.Widget.SeekBar;
+#elif WEB
+using PlatformView = Ooui.Element;
 #elif WINDOWS
 using PlatformView = Microsoft.UI.Xaml.Controls.Slider;
 #elif TIZEN

@@ -4,6 +4,8 @@ using System;
 using PlatformView = UIKit.UIImage;
 #elif ANDROID
 using PlatformView = Android.Graphics.Drawables.Drawable;
+#elif WEB
+using PlatformView = Ooui.Element;
 #elif WINDOWS
 using PlatformView = Microsoft.UI.Xaml.Media.ImageSource;
 #elif TIZEN

@@ -2,6 +2,8 @@
 using PlatformView = UIKit.UIView;
 #elif __ANDROID__
 using PlatformView = Android.Views.View;
+#elif WEB
+using PlatformView = Ooui.Element;
 #elif WINDOWS
 using PlatformView = Microsoft.UI.Xaml.FrameworkElement;
 #elif TIZEN

@@ -3,6 +3,8 @@
 using PlatformView = Microsoft.Maui.Platform.ContentView;
 #elif __ANDROID__
 using PlatformView = Microsoft.Maui.Platform.ContentViewGroup;
+#elif WEB
+using PlatformView = Ooui.Element;
 #elif WINDOWS
 using PlatformView = Microsoft.Maui.Platform.ContentPanel;
 #elif TIZEN

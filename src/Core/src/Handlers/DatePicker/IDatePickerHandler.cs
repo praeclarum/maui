@@ -4,6 +4,8 @@ using PlatformView = Microsoft.Maui.Platform.MauiDatePicker;
 using PlatformView = UIKit.UIDatePicker;
 #elif MONOANDROID
 using PlatformView = Microsoft.Maui.Platform.MauiDatePicker;
+#elif WEB
+using PlatformView = Ooui.Element;
 #elif WINDOWS
 using PlatformView = Microsoft.UI.Xaml.Controls.CalendarDatePicker;
 #elif TIZEN

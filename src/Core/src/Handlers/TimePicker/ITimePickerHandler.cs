@@ -4,6 +4,8 @@ using PlatformView = Microsoft.Maui.Platform.MauiTimePicker;
 using PlatformView = UIKit.UIDatePicker;
 #elif MONOANDROID
 using PlatformView = Microsoft.Maui.Platform.MauiTimePicker;
+#elif WEB
+using PlatformView = Ooui.Element;
 #elif WINDOWS
 using PlatformView = Microsoft.UI.Xaml.Controls.TimePicker;
 #elif TIZEN

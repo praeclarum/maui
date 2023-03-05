@@ -2,6 +2,8 @@
 using PlatformView = Microsoft.Maui.Platform.MauiShapeView;
 #elif MONOANDROID
 using PlatformView = Microsoft.Maui.Platform.MauiShapeView;
+#elif WEB
+using PlatformView = Ooui.Element;
 #elif WINDOWS
 using PlatformView = Microsoft.Maui.Graphics.Win2D.W2DGraphicsView;
 #elif TIZEN

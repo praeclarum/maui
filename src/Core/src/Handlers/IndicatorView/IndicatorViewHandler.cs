@@ -3,6 +3,8 @@
 using PlatformView = Microsoft.Maui.Platform.MauiPageControl;
 #elif MONOANDROID
 using PlatformView = Microsoft.Maui.Platform.MauiPageControl;
+#elif WEB
+using PlatformView = Ooui.Element;
 #elif WINDOWS
 using PlatformView = Microsoft.Maui.Platform.MauiPageControl;
 #elif TIZEN

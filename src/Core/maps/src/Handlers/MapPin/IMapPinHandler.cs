@@ -3,6 +3,8 @@ using PlatformView = MapKit.IMKAnnotation;
 #elif MONOANDROID
 using Android.Gms.Maps;
 using PlatformView = Android.Gms.Maps.Model.MarkerOptions;
+#elif WEB
+using PlatformView = Ooui.Element;
 #elif WINDOWS
 using PlatformView = System.Object;
 #elif TIZEN

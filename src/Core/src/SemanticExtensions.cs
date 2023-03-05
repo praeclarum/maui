@@ -7,6 +7,8 @@ using Android.Text;
 using Android.Views;
 using Android.Views.Accessibility;
 using PlatformView = Android.Views.View;
+#elif WEB
+using PlatformView = Ooui.Element;
 #elif WINDOWS
 using PlatformView = Microsoft.UI.Xaml.FrameworkElement;
 #elif TIZEN

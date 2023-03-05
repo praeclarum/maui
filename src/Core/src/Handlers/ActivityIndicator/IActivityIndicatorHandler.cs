@@ -2,6 +2,8 @@
 using PlatformView = Microsoft.Maui.Platform.MauiActivityIndicator;
 #elif MONOANDROID
 using PlatformView = Android.Widget.ProgressBar;
+#elif WEB
+using PlatformView = Ooui.Element;
 #elif WINDOWS
 using PlatformView = Microsoft.UI.Xaml.Controls.ProgressRing;
 #elif TIZEN

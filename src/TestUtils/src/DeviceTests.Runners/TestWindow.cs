@@ -8,6 +8,8 @@ using Microsoft.Maui.TestUtils.DeviceTests.Runners.HeadlessRunner;
 using PlatformView = UIKit.UIWindow;
 #elif MONOANDROID
 using PlatformView = Android.App.Activity;
+#elif WEB
+using PlatformView = Ooui.Element;
 #elif WINDOWS
 using PlatformView = Microsoft.UI.Xaml.Window;
 #elif (NETSTANDARD || !PLATFORM) || (NET6_0_OR_GREATER && !IOS && !ANDROID)

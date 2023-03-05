@@ -4,6 +4,8 @@ using System;
 using PlatformView = UIKit.UIScrollView;
 #elif MONOANDROID
 using PlatformView = Microsoft.Maui.Platform.MauiScrollView;
+#elif WEB
+using PlatformView = Ooui.Element;
 #elif WINDOWS
 using PlatformView = Microsoft.UI.Xaml.Controls.ScrollViewer;
 #elif TIZEN

@@ -3,6 +3,8 @@
 using PlatformView = Microsoft.Maui.Platform.MauiSearchBar;
 #elif MONOANDROID
 using PlatformView = AndroidX.AppCompat.Widget.SearchView;
+#elif WEB
+using PlatformView = Ooui.Element;
 #elif WINDOWS
 using PlatformView = Microsoft.UI.Xaml.Controls.AutoSuggestBox;
 #elif TIZEN

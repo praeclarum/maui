@@ -10,6 +10,8 @@ using PlatformView = Android.Views.View;
 using BasePlatformType = Android.Content.Context;
 using PlatformWindow = Android.App.Activity;
 using PlatformApplication = Android.App.Application;
+#elif WEB
+using PlatformView = Ooui.Element;
 #elif WINDOWS
 using PlatformView = Microsoft.UI.Xaml.FrameworkElement;
 using BasePlatformType = WinRT.IWinRTObject;

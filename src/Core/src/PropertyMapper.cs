@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using PlatformView = UIKit.UIView;
 #elif ANDROID
 using PlatformView = Android.Views.View;
+#elif WEB
+using PlatformView = Ooui.Element;
 #elif WINDOWS
 using PlatformView = Microsoft.UI.Xaml.FrameworkElement;
 #elif (NETSTANDARD || !PLATFORM) || (NET6_0_OR_GREATER && !IOS && !ANDROID)

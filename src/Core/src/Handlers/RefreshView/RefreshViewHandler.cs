@@ -2,6 +2,8 @@
 using PlatformView = Microsoft.Maui.Platform.MauiRefreshView;
 #elif MONOANDROID
 using PlatformView = Microsoft.Maui.Platform.MauiSwipeRefreshLayout;
+#elif WEB
+using PlatformView = Ooui.Element;
 #elif WINDOWS
 using PlatformView = Microsoft.UI.Xaml.Controls.RefreshContainer;
 #elif TIZEN

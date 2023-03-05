@@ -2,6 +2,8 @@
 using PlatformView = UIKit.UIButton;
 #elif MONOANDROID
 using PlatformView = Google.Android.Material.ImageView.ShapeableImageView;
+#elif WEB
+using PlatformView = Ooui.Element;
 #elif WINDOWS
 using PlatformView = Microsoft.UI.Xaml.Controls.Button;
 #elif TIZEN
