@@ -9,7 +9,7 @@ using PlatformView = Ooui.Element;
 using PlatformView = Microsoft.UI.Xaml.Controls.AutoSuggestBox;
 #elif TIZEN
 using PlatformView = Microsoft.Maui.Platform.MauiSearchBar;
-#elif (NETSTANDARD || !PLATFORM) || (NET6_0_OR_GREATER && !IOS && !ANDROID && !TIZEN)
+#elif (NETSTANDARD || !PLATFORM) || (NET6_0_OR_GREATER && !IOS && !ANDROID && !TIZEN && !WEB)
 using PlatformView = System.Object;
 #endif
 

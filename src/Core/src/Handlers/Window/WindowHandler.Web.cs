@@ -4,8 +4,6 @@ namespace Microsoft.Maui.Handlers
 {
 	public partial class WindowHandler : ElementHandler<IWindow, Ooui.Element>
 	{
-		protected override Ooui.Element CreatePlatformElement() => throw new NotImplementedException();
-
 		public static void MapTitle(IWindowHandler handler, IWindow window) { }
 
 		public static void MapX(IWindowHandler handler, IWindow view) { }

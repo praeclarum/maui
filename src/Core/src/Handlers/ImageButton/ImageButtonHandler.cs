@@ -6,6 +6,10 @@ using PlatformView = UIKit.UIButton;
 using PlatformImage = Android.Graphics.Drawables.Drawable;
 using PlatformImageView = Android.Widget.ImageView;
 using PlatformView = Google.Android.Material.ImageView.ShapeableImageView;
+#elif WEB
+using PlatformImage = System.Object;
+using PlatformImageView = Ooui.Element;
+using PlatformView = Ooui.Element;
 #elif WINDOWS
 using System;
 using PlatformImage = Microsoft.UI.Xaml.Media.ImageSource;
@@ -15,7 +19,7 @@ using PlatformView = Microsoft.UI.Xaml.Controls.Button;
 using PlatformImage = Microsoft.Maui.Platform.MauiImageSource;
 using PlatformImageView = Tizen.UIExtensions.NUI.Image;
 using PlatformView = Microsoft.Maui.Platform.MauiImageButton;
-#elif (NETSTANDARD || !PLATFORM) || (NET6_0_OR_GREATER && !IOS && !ANDROID && !TIZEN)
+#elif (NETSTANDARD || !PLATFORM) || (NET6_0_OR_GREATER && !IOS && !ANDROID && !TIZEN && !WEB)
 using PlatformImage = System.Object;
 using PlatformImageView = System.Object;
 using PlatformView = System.Object;

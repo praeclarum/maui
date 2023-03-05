@@ -8,11 +8,13 @@ using Microsoft.Extensions.DependencyInjection;
 using PlatformImage = UIKit.UIImage;
 #elif MONOANDROID
 using PlatformImage = Android.Graphics.Drawables.Drawable;
+#elif WEB
+using PlatformImage = System.Object;
 #elif WINDOWS
 using PlatformImage = Microsoft.UI.Xaml.Media.ImageSource;
 #elif TIZEN
 using PlatformImage = Microsoft.Maui.Platform.MauiImageSource;
-#elif (NETSTANDARD || !PLATFORM) || (NET6_0_OR_GREATER && !IOS && !ANDROID && !TIZEN)
+#elif (NETSTANDARD || !PLATFORM) || (NET6_0_OR_GREATER && !IOS && !ANDROID && !TIZEN && !WEB)
 using PlatformImage = System.Object;
 #endif
 

@@ -2,9 +2,9 @@
 
 namespace Microsoft.Maui.Handlers
 {
-	public partial class GraphicsViewHandler : ViewHandler<IGraphicsView, Ooui.Element>
+	public partial class GraphicsViewHandler : ViewHandler<IGraphicsView, PlatformTouchGraphicsView>
 	{
-		protected override Ooui.Element CreatePlatformView() => throw new NotImplementedException();
+		protected override PlatformTouchGraphicsView CreatePlatformView() => throw new NotImplementedException();
 
 		public static void MapDrawable(IGraphicsViewHandler handler, IGraphicsView graphicsView) { }
 		public static void MapFlowDirection(IGraphicsViewHandler handler, IGraphicsView graphicsView) { }

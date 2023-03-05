@@ -9,7 +9,7 @@ using PlatformView = Ooui.Element;
 using PlatformView = Microsoft.Maui.Platform.MauiPageControl;
 #elif TIZEN
 using PlatformView = Microsoft.Maui.Platform.MauiPageControl;
-#elif (NETSTANDARD || !PLATFORM) || (NET6_0_OR_GREATER && !IOS && !ANDROID && !TIZEN)
+#elif (NETSTANDARD || !PLATFORM) || (NET6_0_OR_GREATER && !IOS && !ANDROID && !TIZEN && !WEB)
 using PlatformView = System.Object;
 #endif
 
