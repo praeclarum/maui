@@ -2,7 +2,7 @@
 
 namespace Microsoft.Maui.Handlers
 {
-	public partial class RadioButtonHandler : ViewHandler<IRadioButton, object>
+	public partial class RadioButtonHandler : ViewHandler<IRadioButton, Ooui.Element>
 	{
 		protected override object CreatePlatformView() => throw new NotImplementedException();
 

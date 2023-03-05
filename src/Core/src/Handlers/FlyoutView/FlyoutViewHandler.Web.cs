@@ -2,7 +2,7 @@
 
 namespace Microsoft.Maui.Handlers
 {
-	public partial class FlyoutViewHandler : ViewHandler<IFlyoutView, object>
+	public partial class FlyoutViewHandler : ViewHandler<IFlyoutView, Ooui.Element>
 	{
 		protected override object CreatePlatformView()
 		{

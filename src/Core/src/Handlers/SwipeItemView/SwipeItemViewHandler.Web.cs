@@ -2,7 +2,7 @@
 
 namespace Microsoft.Maui.Handlers
 {
-	public partial class SwipeItemViewHandler : ViewHandler<ISwipeItemView, object>, ISwipeItemViewHandler
+	public partial class SwipeItemViewHandler : ViewHandler<ISwipeItemView, Ooui.Element>, ISwipeItemViewHandler
 	{
 		protected override object CreatePlatformView()
 		{

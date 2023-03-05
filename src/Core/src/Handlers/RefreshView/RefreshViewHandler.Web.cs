@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Microsoft.Maui.Handlers
 {
-	public partial class RefreshViewHandler : ViewHandler<IRefreshView, object>
+	public partial class RefreshViewHandler : ViewHandler<IRefreshView, Ooui.Element>
 	{
 		protected override object CreatePlatformView() => throw new NotImplementedException();
 

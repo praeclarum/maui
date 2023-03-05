@@ -2,7 +2,7 @@
 
 namespace Microsoft.Maui.Handlers
 {
-	public partial class CheckBoxHandler : ViewHandler<ICheckBox, object>
+	public partial class CheckBoxHandler : ViewHandler<ICheckBox, Ooui.Element>
 	{
 		protected override object CreatePlatformView() => throw new NotImplementedException();
 

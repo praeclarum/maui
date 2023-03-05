@@ -2,7 +2,7 @@
 
 namespace Microsoft.Maui.Handlers
 {
-	public partial class WebViewHandler : ViewHandler<IWebView, object>
+	public partial class WebViewHandler : ViewHandler<IWebView, Ooui.Element>
 	{
 		protected override object CreatePlatformView() => throw new NotImplementedException();
 

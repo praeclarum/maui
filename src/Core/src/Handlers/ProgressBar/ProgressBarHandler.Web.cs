@@ -2,7 +2,7 @@
 
 namespace Microsoft.Maui.Handlers
 {
-	public partial class ProgressBarHandler : ViewHandler<IProgress, object>
+	public partial class ProgressBarHandler : ViewHandler<IProgress, Ooui.Element>
 	{
 		protected override object CreatePlatformView() => throw new NotImplementedException();
 

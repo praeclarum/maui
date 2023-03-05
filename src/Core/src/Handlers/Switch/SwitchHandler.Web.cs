@@ -2,7 +2,7 @@ using System;
 
 namespace Microsoft.Maui.Handlers
 {
-	public partial class SwitchHandler : ViewHandler<ISwitch, object>
+	public partial class SwitchHandler : ViewHandler<ISwitch, Ooui.Element>
 	{
 		protected override object CreatePlatformView() => throw new NotImplementedException();
 

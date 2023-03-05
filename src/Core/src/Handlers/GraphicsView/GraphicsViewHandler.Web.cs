@@ -2,7 +2,7 @@
 
 namespace Microsoft.Maui.Handlers
 {
-	public partial class GraphicsViewHandler : ViewHandler<IGraphicsView, object>
+	public partial class GraphicsViewHandler : ViewHandler<IGraphicsView, Ooui.Element>
 	{
 		protected override object CreatePlatformView() => throw new NotImplementedException();
 

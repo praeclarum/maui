@@ -2,7 +2,7 @@ using System;
 
 namespace Microsoft.Maui.Handlers
 {
-	public partial class ButtonHandler : ViewHandler<IButton, object>
+	public partial class ButtonHandler : ViewHandler<IButton, Ooui.Element>
 	{
 		protected override object CreatePlatformView() => throw new NotImplementedException();
 

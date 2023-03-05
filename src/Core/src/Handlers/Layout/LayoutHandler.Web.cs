@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Microsoft.Maui.Handlers
 {
-	public partial class LayoutHandler : ViewHandler<ILayout, object>
+	public partial class LayoutHandler : ViewHandler<ILayout, Ooui.Element>
 	{
 		public void Add(IView view) => throw new NotImplementedException();
 		public void Remove(IView view) => throw new NotImplementedException();

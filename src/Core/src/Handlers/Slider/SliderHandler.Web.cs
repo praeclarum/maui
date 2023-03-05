@@ -2,7 +2,7 @@ using System;
 
 namespace Microsoft.Maui.Handlers
 {
-	public partial class SliderHandler : ViewHandler<ISlider, object>
+	public partial class SliderHandler : ViewHandler<ISlider, Ooui.Element>
 	{
 		protected override object CreatePlatformView() => throw new NotImplementedException();
 

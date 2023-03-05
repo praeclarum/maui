@@ -2,7 +2,7 @@
 
 namespace Microsoft.Maui.Handlers
 {
-	public partial class EditorHandler : ViewHandler<IEditor, object>
+	public partial class EditorHandler : ViewHandler<IEditor, Ooui.Element>
 	{
 		protected override object CreatePlatformView() => throw new NotImplementedException();
 

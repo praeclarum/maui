@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Microsoft.Maui.Handlers
 {
-	public partial class ScrollViewHandler : ViewHandler<IScrollView, object>
+	public partial class ScrollViewHandler : ViewHandler<IScrollView, Ooui.Element>
 	{
 		protected override object CreatePlatformView() => throw new NotImplementedException();
 

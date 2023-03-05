@@ -2,7 +2,7 @@
 
 namespace Microsoft.Maui.Handlers
 {
-	public partial class ImageHandler : ViewHandler<IImage, object>
+	public partial class ImageHandler : ViewHandler<IImage, Ooui.Element>
 	{
 		protected override object CreatePlatformView() => throw new NotImplementedException();
 		public static void MapAspect(IImageHandler handler, IImage image) { }

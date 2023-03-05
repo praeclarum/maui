@@ -2,7 +2,7 @@ using System;
 
 namespace Microsoft.Maui.Handlers
 {
-	public partial class LabelHandler : ViewHandler<ILabel, object>
+	public partial class LabelHandler : ViewHandler<ILabel, Ooui.Element>
 	{
 		protected override object CreatePlatformView() => throw new NotImplementedException();
 

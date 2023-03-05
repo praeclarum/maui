@@ -2,7 +2,7 @@ using System;
 
 namespace Microsoft.Maui.Handlers
 {
-	public partial class SwipeViewHandler : ViewHandler<ISwipeView, object>
+	public partial class SwipeViewHandler : ViewHandler<ISwipeView, Ooui.Element>
 	{
 		protected override object CreatePlatformView() => throw new NotImplementedException();
 

@@ -2,7 +2,7 @@
 
 namespace Microsoft.Maui.Handlers
 {
-	public partial class PickerHandler : ViewHandler<IPicker, object>
+	public partial class PickerHandler : ViewHandler<IPicker, Ooui.Element>
 	{
 		protected override object CreatePlatformView() => throw new NotImplementedException();
 

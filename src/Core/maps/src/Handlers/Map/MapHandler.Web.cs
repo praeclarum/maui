@@ -3,7 +3,7 @@ using Microsoft.Maui.Handlers;
 
 namespace Microsoft.Maui.Maps.Handlers
 {
-	public partial class MapHandler : ViewHandler<IMap, object>
+	public partial class MapHandler : ViewHandler<IMap, Ooui.Element>
 	{
 
 		protected override object CreatePlatformView() => throw new NotImplementedException();

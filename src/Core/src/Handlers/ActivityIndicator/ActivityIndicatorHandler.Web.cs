@@ -2,7 +2,7 @@
 
 namespace Microsoft.Maui.Handlers
 {
-	public partial class ActivityIndicatorHandler : ViewHandler<IActivityIndicator, object>
+	public partial class ActivityIndicatorHandler : ViewHandler<IActivityIndicator, Ooui.Element>
 	{
 		protected override object CreatePlatformView() => throw new NotImplementedException();
 

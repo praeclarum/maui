@@ -2,7 +2,7 @@
 
 namespace Microsoft.Maui.Handlers
 {
-	public partial class TimePickerHandler : ViewHandler<ITimePicker, object>
+	public partial class TimePickerHandler : ViewHandler<ITimePicker, Ooui.Element>
 	{
 		protected override object CreatePlatformView() => throw new NotImplementedException();
 
