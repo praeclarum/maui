@@ -33,7 +33,10 @@ namespace Microsoft.Maui
 		}
 
 
-#if PLATFORM
+#if WEB
+		async static Task<IScreenshotResult?> CaptureAsync(PlatformView window) =>
+			throw new System.NotSupportedException();
+#elif PLATFORM
 		async static Task<IScreenshotResult?> CaptureAsync(PlatformView window) =>
 			await Screenshot.Default.CaptureAsync(window);
 #endif

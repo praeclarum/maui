@@ -2,9 +2,9 @@
 
 namespace Microsoft.Maui.Handlers
 {
-	public partial class MenuBarHandler : ElementHandler<IMenuBar, object>, IMenuBarHandler
+	public partial class MenuBarHandler : ElementHandler<IMenuBar, Ooui.Element>, IMenuBarHandler
 	{
-		protected override object CreatePlatformElement()
+		protected override Ooui.Element CreatePlatformElement()
 		{
 			throw new NotImplementedException();
 		}

@@ -4,7 +4,7 @@ using Microsoft.Maui.Primitives;
 
 namespace Microsoft.Maui.Platform
 {
-	public class PlatformTouchGraphicsView : Ooui.Element, IGraphicsView
+	public class PlatformTouchGraphicsView : Ooui.Canvas, IGraphicsView
 	{
 		public IDrawable Drawable => throw new NotImplementedException();
 
@@ -89,6 +89,16 @@ namespace Microsoft.Maui.Platform
 		{
 			throw new NotImplementedException();
 		}
+
+        public void Connect(IGraphicsView virtualView)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Disconnect()
+        {
+            throw new NotImplementedException();
+        }
 
 		public void DragInteraction(PointF[] points)
 		{

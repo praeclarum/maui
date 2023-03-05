@@ -1,6 +1,7 @@
 ﻿#if IOS || MACCATALYST
 using PlatformView = UIKit.UIMenu;
 #elif WEB
+using System;
 using PlatformView = Ooui.Element;
 #elif WINDOWS
 using PlatformView = Microsoft.UI.Xaml.Controls.MenuFlyoutSeparator;

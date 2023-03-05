@@ -13,4 +13,5 @@ namespace Microsoft.Maui.Controls.PlatformConfiguration
 	public sealed class macOS : IConfigPlatform { }
 	/// <include file="../../../docs/Microsoft.Maui.Controls.PlatformConfiguration/GTK.xml" path="Type[@FullName='Microsoft.Maui.Controls.PlatformConfiguration.GTK']/Docs/*" />
 	public sealed class GTK : IConfigPlatform { }
+	public sealed class Web : IConfigPlatform { }
 }

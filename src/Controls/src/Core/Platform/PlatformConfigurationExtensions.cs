@@ -3,6 +3,8 @@
 using CurrentPlatform = Microsoft.Maui.Controls.PlatformConfiguration.iOS;
 #elif __ANDROID__
 using CurrentPlatform = Microsoft.Maui.Controls.PlatformConfiguration.Android;
+#elif WEB
+using CurrentPlatform = Microsoft.Maui.Controls.PlatformConfiguration.Web;
 #elif WINDOWS
 using CurrentPlatform = Microsoft.Maui.Controls.PlatformConfiguration.Windows;
 #elif TIZEN

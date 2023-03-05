@@ -2,7 +2,7 @@
 {
 	public partial class WindowOverlay
 	{
-		object? _graphicsView = null;
+		Ooui.Element? _graphicsView = null;
 
 		/// <inheritdoc/>
 		public void Invalidate()
