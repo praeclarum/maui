@@ -8,7 +8,7 @@ namespace Microsoft.Maui.Controls.Handlers.Items
 {
 	public partial class GroupableItemsViewHandler<TItemsView> : SelectableItemsViewHandler<TItemsView> where TItemsView : GroupableItemsView
 	{
-		protected override object CreatePlatformView()
+		protected override Ooui.Element CreatePlatformView()
 		{
 			throw new NotImplementedException();
 		}

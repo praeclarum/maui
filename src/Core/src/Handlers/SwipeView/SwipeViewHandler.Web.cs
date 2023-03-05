@@ -4,7 +4,7 @@ namespace Microsoft.Maui.Handlers
 {
 	public partial class SwipeViewHandler : ViewHandler<ISwipeView, Ooui.Element>
 	{
-		protected override object CreatePlatformView() => throw new NotImplementedException();
+		protected override Ooui.Element CreatePlatformView() => throw new NotImplementedException();
 
 		public static void MapContent(ISwipeViewHandler handler, ISwipeView view)
 		{

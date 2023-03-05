@@ -5,7 +5,7 @@ namespace Microsoft.Maui.Controls.Handlers.Items
 {
 	public partial class CarouselViewHandler : ItemsViewHandler<CarouselView>
 	{
-		protected override object CreatePlatformView()
+		protected override Ooui.Element CreatePlatformView()
 		{
 			throw new NotImplementedException();
 		}

@@ -4,7 +4,7 @@ namespace Microsoft.Maui.Handlers
 {
 	public partial class NavigationViewHandler : ViewHandler<IStackNavigationView, Ooui.Element>
 	{
-		protected override object CreatePlatformView()
+		protected override Ooui.Element CreatePlatformView()
 		{
 			throw new NotImplementedException();
 		}

@@ -4,7 +4,7 @@ namespace Microsoft.Maui.Handlers
 {
 	public partial class SliderHandler : ViewHandler<ISlider, Ooui.Element>
 	{
-		protected override object CreatePlatformView() => throw new NotImplementedException();
+		protected override Ooui.Element CreatePlatformView() => throw new NotImplementedException();
 
 		public static void MapMinimum(IViewHandler handler, ISlider slider) { }
 		public static void MapMaximum(IViewHandler handler, ISlider slider) { }

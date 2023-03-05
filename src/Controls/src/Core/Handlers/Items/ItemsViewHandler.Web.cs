@@ -8,7 +8,7 @@ namespace Microsoft.Maui.Controls.Handlers.Items
 {
 	public abstract partial class ItemsViewHandler<TItemsView> : ViewHandler<TItemsView, Ooui.Element> where TItemsView : ItemsView
 	{
-		protected override object CreatePlatformView()
+		protected override Ooui.Element CreatePlatformView()
 		{
 			throw new NotImplementedException();
 		}

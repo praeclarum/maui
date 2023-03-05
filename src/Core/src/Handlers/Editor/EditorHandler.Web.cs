@@ -4,7 +4,7 @@ namespace Microsoft.Maui.Handlers
 {
 	public partial class EditorHandler : ViewHandler<IEditor, Ooui.Element>
 	{
-		protected override object CreatePlatformView() => throw new NotImplementedException();
+		protected override Ooui.Element CreatePlatformView() => throw new NotImplementedException();
 
 		public static void MapText(IViewHandler handler, IEditor editor) { }
 		public static void MapTextColor(IViewHandler handler, IEditor editor) { }

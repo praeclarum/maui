@@ -4,7 +4,7 @@ namespace Microsoft.Maui.Handlers
 {
 	public partial class WebViewHandler : ViewHandler<IWebView, Ooui.Element>
 	{
-		protected override object CreatePlatformView() => throw new NotImplementedException();
+		protected override Ooui.Element CreatePlatformView() => throw new NotImplementedException();
 
 		public static void MapSource(IWebViewHandler handler, IWebView webView) { }
 		public static void MapUserAgent(IWebViewHandler handler, IWebView webView) { }

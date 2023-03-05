@@ -4,7 +4,7 @@ namespace Microsoft.Maui.Handlers
 {
 	public partial class PickerHandler : ViewHandler<IPicker, Ooui.Element>
 	{
-		protected override object CreatePlatformView() => throw new NotImplementedException();
+		protected override Ooui.Element CreatePlatformView() => throw new NotImplementedException();
 
 		// TODO Uncomment me on NET8 [Obsolete]
 		public static void MapReload(IPickerHandler handler, IPicker picker, object? args) { }

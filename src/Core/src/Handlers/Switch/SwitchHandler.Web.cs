@@ -4,7 +4,7 @@ namespace Microsoft.Maui.Handlers
 {
 	public partial class SwitchHandler : ViewHandler<ISwitch, Ooui.Element>
 	{
-		protected override object CreatePlatformView() => throw new NotImplementedException();
+		protected override Ooui.Element CreatePlatformView() => throw new NotImplementedException();
 
 		public static void MapIsOn(ISwitchHandler handler, ISwitch view) { }
 		public static void MapTrackColor(ISwitchHandler handler, ISwitch view) { }

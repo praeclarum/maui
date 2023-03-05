@@ -4,7 +4,7 @@ namespace Microsoft.Maui.Handlers
 {
 	public partial class ImageHandler : ViewHandler<IImage, Ooui.Element>
 	{
-		protected override object CreatePlatformView() => throw new NotImplementedException();
+		protected override Ooui.Element CreatePlatformView() => throw new NotImplementedException();
 		public static void MapAspect(IImageHandler handler, IImage image) { }
 		public static void MapIsAnimationPlaying(IImageHandler handler, IImage image) { }
 		public static void MapSource(IImageHandler handler, IImage image) { }

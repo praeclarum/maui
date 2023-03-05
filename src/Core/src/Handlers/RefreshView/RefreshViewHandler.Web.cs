@@ -6,7 +6,7 @@ namespace Microsoft.Maui.Handlers
 {
 	public partial class RefreshViewHandler : ViewHandler<IRefreshView, Ooui.Element>
 	{
-		protected override object CreatePlatformView() => throw new NotImplementedException();
+		protected override Ooui.Element CreatePlatformView() => throw new NotImplementedException();
 
 		public static void MapIsRefreshing(IRefreshViewHandler handler, IRefreshView refreshView)
 		{

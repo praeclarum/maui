@@ -16,6 +16,7 @@ using PlatformView = Android.Views.View;
 using ParentView = Android.Views.IViewParent;
 #elif WEB
 using PlatformView = Ooui.Element;
+using ParentView = Ooui.Element;
 #elif WINDOWS
 using PlatformView = Microsoft.UI.Xaml.FrameworkElement;
 using ParentView = Microsoft.UI.Xaml.DependencyObject;

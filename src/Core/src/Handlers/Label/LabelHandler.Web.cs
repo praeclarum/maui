@@ -4,7 +4,7 @@ namespace Microsoft.Maui.Handlers
 {
 	public partial class LabelHandler : ViewHandler<ILabel, Ooui.Element>
 	{
-		protected override object CreatePlatformView() => throw new NotImplementedException();
+		protected override Ooui.Element CreatePlatformView() => throw new NotImplementedException();
 
 		public static void MapText(ILabelHandler handler, ILabel label) { }
 		public static void MapTextColor(ILabelHandler handler, ILabel label) { }

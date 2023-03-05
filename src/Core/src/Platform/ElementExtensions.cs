@@ -12,6 +12,9 @@ using PlatformWindow = Android.App.Activity;
 using PlatformApplication = Android.App.Application;
 #elif WEB
 using PlatformView = Ooui.Element;
+using BasePlatformType = System.Object;
+using PlatformWindow = Ooui.Element;
+using PlatformApplication = System.Object;
 #elif WINDOWS
 using PlatformView = Microsoft.UI.Xaml.FrameworkElement;
 using BasePlatformType = WinRT.IWinRTObject;
