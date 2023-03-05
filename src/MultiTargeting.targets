@@ -39,6 +39,12 @@
     <Compile Remove="**\*.Platform.cs" />
     <None Include="**\*.Platform.cs" Exclude="$(DefaultItemExcludes);$(DefaultExcludesInProjectFolder)" />
   </ItemGroup>
+  <ItemGroup Condition=" '$(_MauiTargetPlatformIsWeb)' != 'True' ">
+    <Compile Remove="**\**\*.Web.cs" />
+    <None Include="**\**\*.Web.cs" Exclude="$(DefaultItemExcludes);$(DefaultExcludesInProjectFolder)" />
+    <Compile Remove="**\Web\**\*.cs" />
+    <None Include="**\Web\**\*.cs" Exclude="$(DefaultItemExcludes);$(DefaultExcludesInProjectFolder)" />
+  </ItemGroup>
   <ItemGroup Condition=" '$(_MauiTargetPlatformIsWindows)' != 'True' ">
     <Compile Remove="**\*.Windows.cs" />
     <None Include="**\*.Windows.cs" Exclude="$(DefaultItemExcludes);$(DefaultExcludesInProjectFolder)" />
@@ -105,6 +111,14 @@
   <PropertyGroup Condition=" '$(_MauiTargetPlatformIsTizen)' == 'True' ">
     <DefineConstants>$(DefineConstants);TIZEN</DefineConstants>
   </PropertyGroup>
+
+  <!-- Web -->
+  <PropertyGroup Condition=" '$(_MauiTargetPlatformIsWeb)' == 'True' ">
+    <DefineConstants>$(DefineConstants);WEB</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(_MauiTargetPlatformIsWeb)' == 'True' ">
+    <PackageReference Include="Ooui" Version="$(OouiPackageVersion)" />
+  </ItemGroup>
 
   <!-- Windows -->
   <PropertyGroup Condition=" '$(_MauiTargetPlatformIsWindows)' == 'True' ">

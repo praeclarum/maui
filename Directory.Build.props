@@ -26,6 +26,8 @@
     <_MauiTargetPlatformIsmacOS Condition="'$(_MauiTargetPlatformIdentifier)' == 'macos'">True</_MauiTargetPlatformIsmacOS>
     <_MauiTargetPlatformIstvOS>false</_MauiTargetPlatformIstvOS>
     <_MauiTargetPlatformIstvOS Condition="'$(_MauiTargetPlatformIdentifier)' == 'tvos'">True</_MauiTargetPlatformIstvOS>
+    <_MauiTargetPlatformIsWeb>false</_MauiTargetPlatformIsWeb>
+    <_MauiTargetPlatformIsWeb Condition="$(_MauiTargetPlatformIdentifier.Contains('web')) == 'True'">True</_MauiTargetPlatformIsWeb>
     <_MauiTargetPlatformIsWindows>false</_MauiTargetPlatformIsWindows>
     <_MauiTargetPlatformIsWindows Condition="$(_MauiTargetPlatformIdentifier.Contains('windows')) == 'True'">True</_MauiTargetPlatformIsWindows>
     <_MauiTargetPlatformIsTizen>false</_MauiTargetPlatformIsTizen>
