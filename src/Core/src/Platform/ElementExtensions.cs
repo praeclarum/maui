@@ -14,7 +14,7 @@ using PlatformApplication = Android.App.Application;
 using PlatformView = Ooui.Element;
 using BasePlatformType = System.Object;
 using PlatformWindow = Ooui.Element;
-using PlatformApplication = System.Object;
+using PlatformApplication = Microsoft.Maui.MauiApplication;
 #elif WINDOWS
 using PlatformView = Microsoft.UI.Xaml.FrameworkElement;
 using BasePlatformType = WinRT.IWinRTObject;

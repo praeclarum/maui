@@ -25,6 +25,6 @@ namespace Microsoft.Maui.Dispatching
 	/// <inheritdoc/>
 	public partial class DispatcherProvider
 	{
-		static IDispatcher? GetForCurrentThreadImplementation() => null;
+		static IDispatcher? GetForCurrentThreadImplementation() => new Dispatcher();
 	}
 }

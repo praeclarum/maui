@@ -7,7 +7,7 @@ using PlatformView = UIKit.IUIApplicationDelegate;
 #elif MONOANDROID
 using PlatformView = Android.App.Application;
 #elif WEB
-using PlatformView = Ooui.Element;
+using PlatformView = Microsoft.Maui.MauiApplication;
 #elif WINDOWS
 using PlatformView = Microsoft.UI.Xaml.Application;
 #elif TIZEN
