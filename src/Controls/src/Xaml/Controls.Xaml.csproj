@@ -16,6 +16,9 @@
 		<NoWarn>$(NoWarn);CA1416</NoWarn>
 		<DefineConstants>$(DefineConstants);WINDOWS</DefineConstants>
 	</PropertyGroup>
+	<PropertyGroup Condition="$(_MauiTargetPlatformIdentifier) == 'web' ">
+		<DefineConstants>$(DefineConstants);WEB</DefineConstants>
+	</PropertyGroup>
 
 	<ItemGroup>
 		<ProjectReference Include="..\..\..\Controls\src\Core\Controls.Core.csproj" />
