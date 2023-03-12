@@ -41,7 +41,7 @@ namespace Microsoft.Maui
 
 			Ooui.UI.Publish ("/", oouiWindow);
 
-            Console.ReadLine ();
+			Console.ReadLine ();
 
 			// Services.InvokeLifecycleEvents<WebLifecycle.OnLaunched>(del => del(this, args));
 		}
