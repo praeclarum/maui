@@ -19,7 +19,7 @@ using NativeApplication = Tizen.Applications.CoreApplication;
 using NativeWindow = Tizen.NUI.Window;
 #elif WEB
 using NativeApplication = Microsoft.Maui.MauiApplication;
-using NativeWindow = System.Object;
+using NativeWindow = Ooui.Element;
 #else
 using NativeApplication = System.Object;
 using NativeWindow = System.Object;
