@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Collections.Generic;
 using System.Text;
 
@@ -13,6 +14,24 @@ namespace Microsoft.Maui.Handlers
 		public void Update(int index, IView view) => throw new NotImplementedException();
 		public void UpdateZIndex(IView view) => throw new NotImplementedException();
 
-		protected override Ooui.Element CreatePlatformView() => throw new NotImplementedException();
+		public override void SetVirtualView(IView view)
+		{
+			base.SetVirtualView(view);
+
+			var oldChildren = PlatformView.Children.ToArray();
+			foreach (var child in oldChildren)
+			{
+				PlatformView.RemoveChild(child);
+			}
+			foreach (var child in VirtualView.OrderByZIndex())
+			{
+				PlatformView.AppendChild(child.ToPlatform(MauiContext));
+			}
+		}
+
+		protected override Ooui.Element CreatePlatformView()
+		{
+			return new Ooui.Div();
+		}
 	}
 }
