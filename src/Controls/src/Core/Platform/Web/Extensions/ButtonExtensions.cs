@@ -10,5 +10,10 @@ namespace Microsoft.Maui.Controls.Platform
 		public static void UpdateContentLayout(this Ooui.Element platformButton, Button button)
 		{
 		}
+
+        public static void UpdateText(this Ooui.Element element, Button button)
+		{
+            element.Text = button.Text;
+        }
 	}
 }

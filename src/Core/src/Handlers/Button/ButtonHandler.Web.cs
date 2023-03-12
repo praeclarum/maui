@@ -7,11 +7,22 @@ namespace Microsoft.Maui.Handlers
 		protected override Ooui.Element CreatePlatformView()
 		{
 			var button = new Ooui.Button();
-			// button.Click += OnClick;
-			if (VirtualView is IText text) {
-				button.Text = text.Text;
-			}
 			return button;
+		}
+
+		protected override void ConnectHandler(Ooui.Element platformView)
+		{
+			platformView.Click += OnClick;
+			platformView.PropertyChanged += (sender, e) => {
+				ViewMapper.UpdateProperty(this, VirtualView, e.PropertyName);
+			};
+			base.ConnectHandler(platformView);
+		}
+
+		protected override void DisconnectHandler(Ooui.Element platformView)
+		{
+			platformView.Click -= OnClick;
+			base.DisconnectHandler(platformView);
 		}
 
 		public static void MapStrokeColor(IButtonHandler handler, IButtonStroke buttonStroke) { }
@@ -28,5 +39,10 @@ namespace Microsoft.Maui.Handlers
 		public static void MapImageSource(IButtonHandler handler, IImage image) { }
 
 		void OnSetImageSource(object? obj) { }
+
+		void OnClick(object? sender, Ooui.TargetEventArgs e)
+		{
+			VirtualView?.Clicked();			
+		}
 	}
 }
